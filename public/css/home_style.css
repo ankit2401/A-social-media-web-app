@@ -73,7 +73,7 @@ label[for = password] {
 	margin-left: 100px;
 	position: absolute;
 }
-input[type = password2] {
+input[type = password] {
 	width: 380px;
 	padding: 8px 0px;
 	margin-top: 40px;
