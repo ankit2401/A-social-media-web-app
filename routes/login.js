@@ -7,6 +7,9 @@ var name,myname;
 router.get('/', (req,res) => res.render('home_dashboard'));
 router.get('/home', (req,res) => res.render('home_page'));
 router.get('/search', (req,res) => res.render('search_page'));
+router.get('/chat', (req,res) => {
+        res.render('chat', {personname: myname});
+});
 
 router.get('/myprofile', (req,res) => {
 	res.render('myprofile', {personname: myname});
@@ -15,6 +18,7 @@ router.get('/myprofile', (req,res) => {
 router.get('/profile', (req,res) => {
 	res.render('profile', {firstname: name});
 });
+
 
 router.post('/signin', function(req,res) {
 	var username = req.body.username;
